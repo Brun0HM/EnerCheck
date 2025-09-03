@@ -11,3 +11,8 @@ body {
 .zulzinho {
   background-color: #e2e7f7 !important;
 }
+
+.circulo {
+  width: 70px !important;
+  height: 70px !important;
+}
