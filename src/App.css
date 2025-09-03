@@ -3,4 +3,6 @@ body {
   padding: 0 !important;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
-
+.fundo{
+  background-color: #f8f8f8 !important;
+}

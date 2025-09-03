@@ -6,12 +6,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { BrowserRouter, Route, Routes } from "react-router";
 import "./styles/main.scss";
+import Logar from "./pages/Logar.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/*" element={<App />} />
+        <Route path="/login" element={<Logar />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
