@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Motivos from "./components/Motivos";
 
 const App = () => {
   return (
@@ -41,6 +42,60 @@ const App = () => {
             alt="Hero Image"
             className="img-fluid mt-5"
           />
+        </div>
+        <div className="mt-5">
+          <h1 className="fw-bold fs-1">Por que escolher o EnerCheck?</h1>
+          <p className="fs-4 text-secondary">
+            Tecnologia de ponta para modernizar a verificação de projetos
+            elétricos
+          </p>
+        </div>
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-4 col-md-6 mb-3">
+              <Motivos
+                icon="bi bi-lightning-charge"
+                title="análise instantânea"
+                description="Upload de PDFs e receba relatórios detalhados em minutos, não em dias
+              "
+              />
+            </div>
+            <div className="col-lg-4 col-md-6 mb-3">
+              <Motivos
+                icon="bi bi-shield"
+                title="Conformidade NBR 5410"
+                description="Verificação automática de conformidade com normas técnicas brasileiras"
+              />
+            </div>
+            <div className="col-lg-4 col-md-6 mb-3">
+              <Motivos
+                icon="bi bi-clock"
+                title="Economia de tempo"
+                description="Reduza o tempo de análise de semanas para minutos com IA avançada"
+              />
+            </div>
+            <div className="col-lg-4 col-md-6 mb-3">
+              <Motivos
+                description="Documentação completa com identificação de não conformidades"
+                title="Relatórios detalhados"
+                icon="bi bi-file-earmark-text"
+              />
+            </div>
+            <div className="col-lg-4 col-md-6 mb-3">
+              <Motivos
+                icon="bi bi-people"
+                title="para profissionais"
+                description="Ideal para engenheiros, construtoras e profissionais autônomos"
+              />
+            </div>
+            <div className="col-lg-4 col-md-6 mb-3">
+              <Motivos
+                icon="bi bi-award"
+                title="Qualidade garantida"
+                description="Redução significativa de erros e aumento da segurança das instalações"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
