@@ -7,6 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { BrowserRouter, Route, Routes } from "react-router";
 import "./styles/main.scss";
 import Logar from "./pages/Logar.jsx";
+import Cadastrar from "./pages/Cadastrar.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/*" element={<App />} />
         <Route path="/login" element={<Logar />} />
+        <Route path="/cadastrar" element={<Cadastrar />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
