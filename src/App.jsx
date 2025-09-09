@@ -7,7 +7,6 @@ import Login from "./components/Login";
 const App = () => {
   return (
     <div>
-      <Header />
       <div className={`mainContent`}>
       <div className="container mt-5 text-center d-flex flex-column align-items-center justify-content-center">
         <div>
@@ -17,7 +16,6 @@ const App = () => {
         </div>
       </div>
       </div>
-      <Footer/>
     </div>
   );
 };

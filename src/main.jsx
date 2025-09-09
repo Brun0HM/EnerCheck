@@ -8,9 +8,12 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import "./styles/main.scss";
 import Logar from "./pages/Logar.jsx";
 import Cadastrar from "./pages/Cadastrar.jsx";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <Header />
     <BrowserRouter>
       <Routes>
         <Route path="/*" element={<App />} />
@@ -18,5 +21,6 @@ createRoot(document.getElementById("root")).render(
         <Route path="/cadastrar" element={<Cadastrar />} />
       </Routes>
     </BrowserRouter>
+    <Footer/>
   </StrictMode>
 );

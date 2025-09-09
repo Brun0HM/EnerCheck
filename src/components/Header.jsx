@@ -4,8 +4,9 @@ import  "../styles/main.scss"
 const Header = () => {
     const [MenuOpen, setMenuOpen] = useState(false);
   return (
-    <header className={`container-fluid position-fixed fixed-top w-100  my-0 headerBlur`}>
- <div className="my-3 my-lg-5">
+    <header className={`container-fluid position-fixed fixed-top my-0 headerBlur text-center`}>
+      <div className="w-75 align-items-center justify-content-center m-auto">
+ <div className="my-2">
     <div className="row align-items-center">
       <div className="col-6 col-lg-auto">
         <div className="d-flex align-items-center ms-3 ms-lg-5">
@@ -79,7 +80,8 @@ const Header = () => {
         </div>
       </div>
       </div>
-      <hr />
+      </div>
+      <hr className="text-dark mb-0 fw-bolder" />
     </header>
   );
 };
