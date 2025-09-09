@@ -31,7 +31,7 @@ const Cadastro = () => {
           <input
             className="w-100 form-control mb-3"
             placeholder="meu@email.com"
-            type="text"
+            type="email"
           />
           <h6>Empresa(opcional)</h6>
           <input
