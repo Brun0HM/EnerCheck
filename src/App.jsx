@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import "./styles/main.scss"
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         </div>
       </div>
       </div>
+      <Footer/>
     </div>
   );
 };
