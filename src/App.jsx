@@ -97,30 +97,45 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="mt-5">
+
+        <div className="mt-5 mb-5">
           <h1 className="fw-bold fs-1">Como Funciona</h1>
           <p className="fs-4 text-secondary">
             Processo simples e eficiente em apenas 3 passos
           </p>
         </div>
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between  gap-4">
-            <div className="bg-primary fs-4 p-4 text-white fw-bold rounded-circle d-flex justify-content-center align-items-center circulo">
-              1
-            </div>
-            <div>
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-4 mb-4 d-flex flex-column text-center align-items-center">
+              <div className="bg-primary fs-4 p-4 text-white fw-bold rounded-circle d-flex justify-content-center align-items-center circulo mb-3">
+                1
+              </div>
               <h4 className="fw-semibold">Upload do Projeto</h4>
               <p className="text-secondary fs-5">
                 Faça upload do seu projeto elétrico em formato PDF através da
                 nossa plataforma segura
               </p>
             </div>
-            <span className="bg-primary p-4 fs-4 fw-bold text-white rounded-circle d-flex justify-content-center align-items-center circulo">
-              2
-            </span>
-            <span className="bg-primary p-4 fw-bold fs-4 rounded-circle text-white d-flex justify-content-center align-items-center circulo">
-              3
-            </span>
+            <div className="col-12 col-md-4 mb-4 d-flex flex-column text-center align-items-center">
+              <div className="bg-primary p-4 fs-4 fw-bold text-white rounded-circle d-flex justify-content-center align-items-center circulo mb-3">
+                2
+              </div>
+              <h4 className="fw-semibold">Análise IA</h4>
+              <p className="text-secondary fs-5">
+                Nossa inteligência artificial analisa automaticamente todo o
+                projeto
+              </p>
+            </div>
+            <div className="col-12 col-md-4 mb-4 d-flex flex-column text-center align-items-center">
+              <div className="bg-primary p-4 fw-bold fs-4 rounded-circle text-white d-flex justify-content-center align-items-center circulo mb-3">
+                3
+              </div>
+              <h4 className="fw-semibold">Relatório Detalhado</h4>
+              <p className="text-secondary fs-5">
+                Receba o relatório detalhado com todas as conformidades
+                identificadas
+              </p>
+            </div>
           </div>
         </div>
       </div>
