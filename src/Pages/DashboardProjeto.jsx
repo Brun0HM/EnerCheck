@@ -7,7 +7,7 @@ import { ContainerChecagem } from '../components/ContainerChecagem'
 
 const DashboardProjeto = () => {
 
-const pontuacaoGeral = 40;
+const pontuacaoGeral = 80;
 
 const [comentarioGeral, setComentarioGeral] = useState("")
 
@@ -19,16 +19,22 @@ const [comentConform, setComentConform] = useState("")
 
 const trocarComentario = () => {
 
-    if (pontuacaoGeral >= 50){
-        setComentario("Ta razoável, ainda não aprovado craque");
-    } else if(pontuacaoGeral >=70 ){
-        setComentario("Conformidade padrão, há pontos a melhorar");
+    if (pontuacaoGeral <= 50){
+        setComentarioGeral("Ta razoável, ainda não aprovado craque");
+    } else if(pontuacaoGeral >= 60 ){
+        setComentarioGeral("Conformidade padrão, há pontos a melhorar");
     } else if(pontuacaoGeral >= 90){
-        setComentario("Excelente conformidade");
+        setComentarioGeral("Excelente conformidade");
     } else if (pontuacaoGeral <= 20) {
-        setComentario("Erros críticos a serem revisados");
+        setComentarioGeral("Erros críticos a serem revisados");
     }
+
+
 }
+
+useEffect(() => {
+    trocarComentario();
+}, [])
 
   return (
     <div className='d-flex flex-column gap-2'>
@@ -38,7 +44,7 @@ const trocarComentario = () => {
         topico={"Pontuação Geral"}
         iconeTopico={"bi-rocket-takeoff"}
         corNumero={"primary"}
-        pontuacaoGeral={"90"}
+        pontuacaoGeral={"80"}
         comentario={"Excelente conformidade"}
         />
 
@@ -47,7 +53,7 @@ const trocarComentario = () => {
         iconeTopico={"bi-rocket-takeoff"}
         corNumero={"success"}
         pontuacaoGeral={pontuacaoGeral}
-        comentario={comentario}
+        comentario={comentarioGeral}
         />
     </div>
 

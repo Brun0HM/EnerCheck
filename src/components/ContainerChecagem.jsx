@@ -1,19 +1,40 @@
 import React from 'react'
+import ContainerCircuito from './ContainerCircuito'
 
 export const ContainerChecagem = () => {
   return (
-    <div className='container bg-body-secondary bg-opacity-50 rounded-3 border border-1'>
+    <div className='container bg-body-secondary bg-opacity-50 rounded-3 border border-1  px-3 py-4 shadow'>
 
-        <div className='d-flex flex-row gap-3 align-items-center'>
-        <i className='bi bi-lightbulb'></i>
+        <div className='d-flex flex-row gap-3 align-items-center ms-2'>
+        <i className='bi bi-lightbulb text-primary fs-5'></i>
         <p className='fs-5 fw-bold m-0'> Análise de Circuitos</p>
         </div>
-        <p className='small text-body-secondary fw-regular'>Verificação detalhada de cada circuito elétrico</p>
+        <p className='  small text-body-secondary fw-medium ms-2'>Verificação detalhada de cada circuito elétrico</p>
 
-    <div className='border border-1 rounded-3 p-2 d-flex flex-column'>
+      <ContainerCircuito
+      icone={"bi-check2-circle"}
+      estado={"text-success"}
+      topico={"Circuito de iluminação - Sala"}
+      result={"Dimensionamento adequado conforme NBR 5410"} />
 
-    
-    </div>
+      <ContainerCircuito
+      icone={"bi-x-circle"}
+      estado={"text-danger"}
+      topico={"Circuito de Tomadas - Cozinha"}
+      result={"Sobrecarga detectada - Redimensionar condutor"} />
+
+      <ContainerCircuito
+      icone={"bi-check2-circle"}
+      estado={"text-success"}
+      topico={"Circuito de Ar Condicionado"}
+      result={"Proteção adequada instalada"} />
+
+      <ContainerCircuito
+      icone={"bi-x-circle"}
+      estado={"text-danger"}
+      topico={"Circuito de Chuveiro"}
+      result={"DR inadequado para a potência"} />
+
 
     <div>
 
