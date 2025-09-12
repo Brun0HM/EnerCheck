@@ -1,15 +1,15 @@
 import React from 'react'
 import ContainerCircuito from './ContainerCircuito'
 
-export const ContainerChecagem = () => {
+export const ContainerChecagem = (props) => {
   return (
     <div className='container bg-body-secondary bg-opacity-50 rounded-3 border border-1  px-3 py-4 shadow'>
 
         <div className='d-flex flex-row gap-3 align-items-center ms-2'>
         <i className='bi bi-lightbulb text-primary fs-5'></i>
-        <p className='fs-5 fw-bold m-0'> Análise de Circuitos</p>
+        <p className='fs-5 fw-bold m-0'>{props.categoria}</p>
         </div>
-        <p className='  small text-body-secondary fw-medium ms-2'>Verificação detalhada de cada circuito elétrico</p>
+        <p className='  small text-body-secondary fw-medium ms-2'>{props.descricao}</p>
 
       <ContainerCircuito
       icone={"bi-check2-circle"}

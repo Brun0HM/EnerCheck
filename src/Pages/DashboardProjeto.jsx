@@ -57,7 +57,8 @@ useEffect(() => {
         />
     </div>
 
-<div>
+<div className='container d-flex flex-row gap-4 my-2'>
+    <ContainerChecagem />
     <ContainerChecagem />
 </div>
     </div>
