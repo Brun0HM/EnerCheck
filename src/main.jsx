@@ -6,6 +6,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { BrowserRouter, Route, Routes } from "react-router";
 import "./styles/main.scss";
+import DashboardProjeto from "./Pages/DashboardProjeto.jsx";
 import Logar from "./pages/Logar.jsx";
 import Cadastrar from "./pages/Cadastrar.jsx";
 import Header from "./components/Header.jsx";
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/*" element={<App />} />
+        <Route path="/dashboardProjeto" element={<DashboardProjeto />}></Route>
         <Route path="/login" element={<Logar />} />
         <Route path="/cadastrar" element={<Cadastrar />} />
       </Routes>
