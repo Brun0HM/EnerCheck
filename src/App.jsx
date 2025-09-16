@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Motivos from "./components/Motivos";
+import Depoimentos from "./components/Depoimentos";
 
 const App = () => {
   return (
@@ -31,7 +32,7 @@ const App = () => {
               Experimente Agora
             </button>
             <button className="btn btn-outline-primary fw-semibold">
-              Experimente Agora
+              Ver Demonstração
             </button>
           </div>
         </div>
@@ -135,6 +136,63 @@ const App = () => {
                 Receba o relatório detalhado com todas as conformidades
                 identificadas
               </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className="mt-5 mb-5">
+            <h1 className="fw-bold fs-1">O que dizem nossos usuários</h1>
+            <p className="fs-4 text-secondary">
+              Profissionais que já transformaram seu trabalho com o EnerCheck
+            </p>
+          </div>
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-12 col-md-4 mb-3">
+                <Depoimentos
+                  foto="https://placehold.co/40x40"
+                  user="Maria Rodriguez"
+                  depoimento="O EnerCheck revolucionou nossa empresa. Reduzimos o tempo de análise de projetos em 80% e aumentamos significativamente a qualidade."
+                  profissa="Engenheira Elétrica"
+                />
+              </div>
+              <div className="col-12 col-md-4 mb-3">
+                <Depoimentos
+                  foto="https://placehold.co/40x40"
+                  user="João Silva"
+                  depoimento="Ferramenta indispensável para qualquer profissional da área elétrica. A precisão da análise é impressionante."
+                  profissa="Diretor Técnico"
+                />
+              </div>
+              <div className="col-12 col-md-4 mb-3 opn">
+                <Depoimentos
+                  foto="https://placehold.co/40x40"
+                  user="Ana Costa"
+                  depoimento="Conseguimos reduzir custos e melhorar a segurança dos nossos projetos. Recomendo para todas as construtoras."
+                  profissa="Gerente de Projetos"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="mt-5 mb-5">
+            <h1 className="fw-bold fs-1">
+              Pronto para modernizar seus projetos elétricos?
+            </h1>
+            <p className="fs-4 text-secondary">
+              Junte-se a centenas de profissionais que já transformaram seu
+              trabalho com o EnerCheck
+            </p>
+
+            <div>
+              <button className="btn btn-dark fw-semibold">
+                Comece Gratuitamente
+              </button>
+              <button className="btn btn-outline-dark fw-semibold ms-3">
+                Falar com Especialista
+              </button>
             </div>
           </div>
         </div>
