@@ -14,15 +14,15 @@ import Footer from "./components/Footer.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Header />
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/*" element={<App />} />
         <Route path="/dashboardProjeto" element={<DashboardProjeto />}></Route>
         <Route path="/login" element={<Logar />} />
         <Route path="/cadastrar" element={<Cadastrar />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
-    <Footer />
   </StrictMode>
 );

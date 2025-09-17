@@ -3,7 +3,7 @@ import Cadastro from "../components/Cadastro";
 
 const Cadastrar = () => {
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center vh-100  mt-3 mb-5">
+    <div className="d-flex flex-column justify-content-center align-items-center  mt-5 mb-5">
       <div className="mb-3 mt-5">
         <div className="mb-2 d-flex justify-content-center align-items-center gap-2">
           <img src="https://placehold.co/40x40" alt="" />
@@ -13,10 +13,6 @@ const Cadastrar = () => {
       </div>
       <Cadastro />
       <div className="d-flex flex-column justify-content-center align-items-center mt-3">
-        <div className="d-flex gap-1 justify-content-center align-items-center mt-3 fs-5">
-          <p className="m-0">Não tem uma conta?</p>
-          <a className="text text-decoration-none">Criar conta</a>
-        </div>
         <div
           className="d-flex align-items-center mt-3 text-muted w-100"
           style={{ maxWidth: "300px" }}

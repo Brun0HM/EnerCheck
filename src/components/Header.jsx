@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "../styles/main.scss";
+import { useNavigate } from "react-router";
 
 const Header = () => {
   const [MenuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
   return (
     <header
       className={`container-fluid position-fixed fixed-top my-0 headerBlur text-center`}
@@ -11,7 +14,10 @@ const Header = () => {
         <div className="my-2">
           <div className="row align-items-center">
             <div className="col-6 col-lg-auto">
-              <div className="d-flex align-items-center ms-3 ms-lg-5">
+              <div
+                className="d-flex align-items-center ms-3 ms-lg-5"
+                onClick={() => navigate("/*")}
+              >
                 <div className="btn btn-dark text-light fw-bold">
                   <i className="bi bi-lightning-charge "></i>
                 </div>
@@ -43,7 +49,7 @@ const Header = () => {
                     <li className="nav-item">
                       <a
                         className="text-decoration-none text-dark mx-3 nav-link"
-                        href="#"
+                        href="#recursos"
                       >
                         Recursos
                       </a>
@@ -51,7 +57,7 @@ const Header = () => {
                     <li className="nav-item">
                       <a
                         className="text-decoration-none text-dark mx-3 nav-link"
-                        href="#"
+                        href="#funciona"
                       >
                         Como Funciona
                       </a>
@@ -59,18 +65,23 @@ const Header = () => {
                     <li className="nav-item">
                       <a
                         className="text-decoration-none text-dark mx-3 nav-link"
-                        href="#"
+                        href="#depoimentos"
                       >
                         Depoimentos
                       </a>
                     </li>
+
                     <li className="nav-item">
-                      <button className="btn btn-light border-black mx-3 my-1">
+                      <button
+                        className="btn btn-light border-black mx-3 my-1"
+                        onClick={() => navigate("/login")}
+                      >
                         <a className="text-decoration-none text-dark" href="#">
                           Entrar
                         </a>
                       </button>
                     </li>
+
                     <li className="nav-item">
                       <button className="btn btn-dark mx-3 my-1">
                         <a className="text-decoration-none text-light" href="#">
