@@ -23,6 +23,6 @@ createRoot(document.getElementById("root")).render(
         <Route path="/cadastrar" element={<Cadastrar />} />
       </Routes>
     </BrowserRouter>
-    <Footer/>
+    <Footer />
   </StrictMode>
 );
